@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: service-provide # 应用名称也是微服务名称
+  datasource:
+    url: jdbc:mysql:///test2
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.springcloud.springcloudserviceprovider.pojo
+
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 15  # 过期时间
+    lease-renewal-interval-in-seconds: 5  # 心跳时间
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
