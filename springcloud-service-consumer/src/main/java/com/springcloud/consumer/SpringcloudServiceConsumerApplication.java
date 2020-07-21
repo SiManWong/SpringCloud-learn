@@ -15,13 +15,6 @@ import org.springframework.web.client.RestTemplate;
 @SpringCloudApplication	// 组合注解 相当于@SpringBootApplication @EnableDiscoveryClient @EnableCircuitBreaker
 @EnableFeignClients	// 开启Feign功能
 public class SpringcloudServiceConsumerApplication {
-
-//	@Bean
-//	@LoadBalanced // 开启负载均衡
-//	public RestTemplate restTemplate() {
-//		return new RestTemplate();
-//	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringcloudServiceConsumerApplication.class, args);
 	}
