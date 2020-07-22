@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:${server.port}/eureka
+      defaultZone: http://www.leyou.com:${server.port}/eureka
   server:
     eviction-interval-timer-in-ms: 5000
 
